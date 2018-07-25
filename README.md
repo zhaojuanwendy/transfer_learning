@@ -47,12 +47,13 @@ The last two rows are the best values for the current metric of current classifi
 ⋅⋅* python/SelecteSamples.py
 ⋅⋅* Generating samples from large NSL_KDD dataset.
 
-##Note
+## Note
 Please note, if you need to use the code for any kind of academy use or commecial use, please cite paper:
 J. Zhao, S. Shetty and J. W. Pan, "Feature-based transfer learning for network security," MILCOM 2017 - 2017 IEEE Military Communications Conference (MILCOM), Baltimore, MD, 2017, pp. 17-22.
-doi: 10.1109/MILCOM.2017.8170749
+doi: 10.1109/MILCOM.2017.8170749 https://ieeexplore.ieee.org/document/8170749/
 
-https://ieeexplore.ieee.org/document/8170749/
+The code also includes baseline approach called HeMap.m. To run the algorithm is to run_HeMap.m
+The reference paper is: X. Shi Q. Liu W. Fan et al. "Transfer learning on heterogeneous feature spaces via spectral transformation" 2010 IEEE International Conference on Data Mining pp. 1049-1054 Dec 2010. 
 
 Please feel free to contact juan.zhao@vanderbilt.edu if come up with any problem.
 

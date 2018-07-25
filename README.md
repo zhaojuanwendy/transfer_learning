@@ -12,15 +12,18 @@ The folder "data" contains the original NSL_KDD and some split data for transfer
   * "dos_vs_probe"
   * "dos_vs_r2l"
   * "probe_vs_r2l"
+  
 2. For each task, the input data is under each folder.
   * "source.x.dat" is the features of instances in the source domain. 
   * "source.y.dat" is the labels of the corresponding instances in "source.x.dat"
   * "target.x.dat" is the features of instances in the target domain. 
   * "target.y.dat" is the labels of the corresponding instances in "target.x.dat"
-  * HeTL needs the source and target should be the same size of the instances.
+  
+  HeTL needs the source and target should be the same size of the instances.
+  
 3. Within each task folder, there is a "result" folder, which is for the output results for the transfer learning codes. 
-   * The "result" folder will contain several folders with the names of the combinations of the parameters.
-   * The codes will produce the new projected data named "transformed_source.csv" and "transformed_target.csv" in each subfolder.
+   ⋅⋅⋅ The "result" folder will contain several folders with the names of the combinations of the parameters.
+   ⋅⋅⋅ The codes will produce the new projected data named "transformed_source.csv" and "transformed_target.csv" in each subfolder.
 
 ## Usage
 1. To run the algorithm, please type in "run_HeTL" in Matlab command line; The output results will be written to the folder "matlab/data/[domain_name]/result_hetl". Please specify your file_path to the transfer learning task.
@@ -32,16 +35,16 @@ The folder "data" contains the original NSL_KDD and some split data for transfer
 * Please specify "domain" to your transfer learning task.
 
 * Summary.ipynb
-⋅⋅⋅ View　feature distribution of NSL_KDD data.
+⋅⋅⋅View　feature distribution of NSL_KDD data.
 * Classification-baseline.ipynb
-⋅⋅⋅ run the classfication before transfer learning as baselines
+⋅⋅⋅run the classfication before transfer learning as baselines
 
 Result Description
 The generated classfication results contains k,b,isnormlized and several metrics for each classfier. The metrics is "accuracy" (ac),"precision"(p),"recall","f1","auc". Each row is results for the combinations for parameters k,b and is isnormlized.
 The last two rows are the best values for the current metric of current classifier and the corresponding best parameters.
 
 3. View the data and the baseline for NSL_KDD
-* The viewing and baseline approaches are implemented in ipython notebook.
+The viewing and baseline approaches are implemented in ipython notebook.
 
 4. Other utility codes
 * python/SelecteSamples.py
